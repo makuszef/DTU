@@ -1,0 +1,131 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DTU/1.0.0": {
+        "dependencies": {
+          "BouncyCastle": "1.8.9",
+          "System.Diagnostics.PerformanceCounter": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "DTU.dll": {}
+        }
+      },
+      "BouncyCastle/1.8.9": {
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.9.0",
+            "fileVersion": "1.8.20343.1"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/10.0.0-preview.3.25171.5": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "10.0.0-preview.3.25171.5",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/10.0.0-preview.3.25171.5": {
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/10.0.0-preview.3.25171.5": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "10.0.0-preview.3.25171.5"
+        },
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/10.0.0-preview.3.25171.5": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.17105"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DTU/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle/1.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "path": "bouncycastle/1.8.9",
+      "hashPath": "bouncycastle.1.8.9.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpAIQlaC6r04B8nD//rIDEVdQMAKCeAN9ypDx34gS77Q4ET9+sE+4ApziGvGv5Ve50bT5PoJAt/29JT9LmRhTA==",
+      "path": "system.configuration.configurationmanager/10.0.0-preview.3.25171.5",
+      "hashPath": "system.configuration.configurationmanager.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ABk8eOWyQ9Pgmz63EE9hmj0G0eLnWItwM9NV0OGMUOEdseVN1PeA1ryQUIQr5C1odDG2ip4oBTLGSrb5+Z2S3w==",
+      "path": "system.diagnostics.eventlog/10.0.0-preview.3.25171.5",
+      "hashPath": "system.diagnostics.eventlog.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3lz15We+Dj+9mr0IvQiahNp1aIUh7oDo+pZpeo0MniZ3SUjMka2pA48X+U+hrMz45GtSVnEs86mh5jCLidmsyQ==",
+      "path": "system.diagnostics.performancecounter/10.0.0-preview.3.25171.5",
+      "hashPath": "system.diagnostics.performancecounter.10.0.0-preview.3.25171.5.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/10.0.0-preview.3.25171.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qsIqM920BE+fPW5RDNUPx2fx3Uk6ZCi7UiUqpGKIWUdt8aTCxdemeh4NaWFQhwd61JDnUsfNFeY8yMYbNzS20g==",
+      "path": "system.security.cryptography.protecteddata/10.0.0-preview.3.25171.5",
+      "hashPath": "system.security.cryptography.protecteddata.10.0.0-preview.3.25171.5.nupkg.sha512"
+    }
+  }
+}
