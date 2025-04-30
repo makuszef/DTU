@@ -263,27 +263,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\humak\\.nuget\\packages\\": {}
+    "C:\\Users\\Hubert\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\humak\\RiderProjects\\DTU\\DTU\\DTU.csproj",
+      "projectUniqueName": "D:\\Magisterka\\PierwszySemestr\\DTIU\\Projekt\\Kod\\DTU\\DTU.csproj",
       "projectName": "DTU",
-      "projectPath": "C:\\Users\\humak\\RiderProjects\\DTU\\DTU\\DTU.csproj",
-      "packagesPath": "C:\\Users\\humak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\humak\\RiderProjects\\DTU\\DTU\\obj\\",
+      "projectPath": "D:\\Magisterka\\PierwszySemestr\\DTIU\\Projekt\\Kod\\DTU\\DTU.csproj",
+      "packagesPath": "C:\\Users\\Hubert\\.nuget\\packages\\",
+      "outputPath": "D:\\Magisterka\\PierwszySemestr\\DTIU\\Projekt\\Kod\\DTU\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\humak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hubert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "E:\\HTMLProjekt": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

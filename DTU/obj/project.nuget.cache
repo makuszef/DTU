@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QWEacV7XYNI=",
+  "dgSpecHash": "l2XLuGl3OZQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\humak\\RiderProjects\\DTU\\DTU\\DTU.csproj",
+  "projectFilePath": "D:\\Magisterka\\PierwszySemestr\\DTIU\\Projekt\\Kod\\DTU\\DTU.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\humak\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
-    "C:\\Users\\humak\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.0-preview.3.25171.5\\system.configuration.configurationmanager.10.0.0-preview.3.25171.5.nupkg.sha512",
-    "C:\\Users\\humak\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.0-preview.3.25171.5\\system.diagnostics.eventlog.10.0.0-preview.3.25171.5.nupkg.sha512",
-    "C:\\Users\\humak\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.0-preview.3.25171.5\\system.diagnostics.performancecounter.10.0.0-preview.3.25171.5.nupkg.sha512",
-    "C:\\Users\\humak\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.0-preview.3.25171.5\\system.security.cryptography.protecteddata.10.0.0-preview.3.25171.5.nupkg.sha512"
+    "C:\\Users\\Hubert\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
+    "C:\\Users\\Hubert\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.0-preview.3.25171.5\\system.configuration.configurationmanager.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\Hubert\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.0-preview.3.25171.5\\system.diagnostics.eventlog.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\Hubert\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.0-preview.3.25171.5\\system.diagnostics.performancecounter.10.0.0-preview.3.25171.5.nupkg.sha512",
+    "C:\\Users\\Hubert\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.0-preview.3.25171.5\\system.security.cryptography.protecteddata.10.0.0-preview.3.25171.5.nupkg.sha512"
   ],
   "logs": [
     {
