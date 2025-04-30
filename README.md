@@ -31,12 +31,12 @@ Projekt automatyzuje pomiar latencji, przepustowości oraz zużycia CPU/RAM na d
 
 ## 🔍 Funkcje skrótu
 
-| Algorytm    | Długość skrótu | Uwagi                                 |
-|-------------|----------------|---------------------------------------|
-| **MD5**     | 128 bitów      | najszybszy, ale niebezpieczny         |
-| **SHA-1**   | 160 bitów      | szybki, ale podatny na kolizje        |
-| **SHA3-512**| 512 bitów      | wysoka odporność, średnia szybkość    |
-| **Whirlpool**| 512 bitów     | bardzo bezpieczny, nieco wolniejszy   |
+| Algorytm     | Długość skrótu | Uwagi                                 |
+|--------------|----------------|---------------------------------------|
+| **MD5**      | 128 bitów      | najszybszy, ale niebezpieczny         |
+| **SHA-1**    | 160 bitów      | szybki, ale podatny na kolizje        |
+| **SHA3-512** | 512 bitów      | wysoka odporność, średnia szybkość    |
+| **Whirlpool**| 512 bitów      | bardzo bezpieczny, nieco wolniejszy   |
 
 ---
 
@@ -52,25 +52,32 @@ Projekt automatyzuje pomiar latencji, przepustowości oraz zużycia CPU/RAM na d
    ```
 
 3. **Katalog testowy**  
-   Utwórz folder `TestowanePliki` obok skompilowanego EXE i umieść tam pliki do testów.
+   Utwórz folder `TestowanePliki` w ścieżce:  
+   ```
+   Kod/DTU/bin/Debug/net8.0/TestowanePliki
+   ```
+   i umieść tam pliki do testów.
 
 ---
 
 ## 📁 Struktura projektu
 
 ```
-/BenchmarkHash
-  ├─ Program.cs              # Główny kod benchmarku
-  ├─ BenchmarkResult.cs      # Model podsumowania
-  ├─ IterationResult.cs      # Model pojedynczej iteracji
-  ├─ TestowanePliki/         # Folder z plikami testowymi
-  ├─ <NazwaPlikuBezExt>/     # Foldery wyników (tworzone automatycznie)
-  │   ├─ md5.csv
-  │   ├─ sha1.csv
-  │   ├─ sha3_512.csv
-  │   ├─ whirlpool.csv
-  │   └─ hash_benchmark_results.csv
-  └─ README.md
+Kod/DTU
+├─ bin/Debug/net8.0/
+│  ├─ DTU.dll                      # skompilowana aplikacja
+│  ├─ TestowanePliki/              # pliki do testów
+│  ├─ <NazwaPlikuBezExt>/          # folder wyników tworzony automatycznie
+│  │   ├─ md5.csv
+│  │   ├─ sha1.csv
+│  │   ├─ sha3_512.csv
+│  │   ├─ whirlpool.csv
+│  │   └─ hash_benchmark_results.csv
+│  └─ README.md
+├─ Program.cs
+├─ BenchmarkResult.cs
+├─ IterationResult.cs
+└─ README.md
 ```
 
 ---
@@ -79,25 +86,29 @@ Projekt automatyzuje pomiar latencji, przepustowości oraz zużycia CPU/RAM na d
 
 1. **Klonuj repozytorium**  
    ```bash
-   git clone https://github.com/TwojRepo/BenchmarkHash.git
-   cd BenchmarkHash
+   git clone https://github.com/makuszef/DTU.git
+   cd DTU
    ```
 
 2. **Zbuduj projekt**  
    ```bash
-   dotnet build -c Release
+   dotnet build -c Debug
    ```
 
 3. **Przygotuj pliki**  
-   Umieść pliki do testów w `bin/Release/net8.0/TestowanePliki/`.
+   Umieść pliki do testów w:  
+   ```
+   Kod/DTU/bin/Debug/net8.0/TestowanePliki/
+   ```
 
 4. **Uruchom**  
    ```bash
-   dotnet bin/Release/net8.0/BenchmarkHash.dll
+   cd Kod/DTU/bin/Debug/net8.0
+   dotnet DTU.dll
    ```
 
 5. **Sprawdź wyniki**  
-   Dla każdego testowanego pliku zostanie utworzony folder `<NazwaPlikuBezExt>` zawierający:
+   Dla każdego testowanego pliku zostanie utworzony folder `<NazwaPlikuBezExt>` w `bin/Debug/net8.0`, zawierający:
    - `md5.csv`, `sha1.csv`, `sha3_512.csv`, `whirlpool.csv` – surowe czasy każdej iteracji  
    - `hash_benchmark_results.csv` – podsumowanie statystyczne  
 
@@ -110,7 +121,7 @@ Projekt automatyzuje pomiar latencji, przepustowości oraz zużycia CPU/RAM na d
 - **MemoryUsageMB** – przyrost pamięci (MB)  
 - **ThroughputMBps** – przepustowość (MB/s)  
 - **Avg, StdDev, P50, P95, P99** – statystyki latencji  
-- Całkowite zużycie CPU i pamięci dla zestawu 10 iteracji  
+- **CpuUsageDiffSec**, **MemoryUsageDiffMB** – całkowite zużycie zasobów
 
 ---
 
